@@ -16,6 +16,13 @@
             integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
             crossorigin="anonymous"
         />
+
+        <style>
+            #loading,
+            #results {
+                display: none;
+            }
+        </style>
     </head>
     <body class="bg-dark">
         <div class="container">
@@ -47,6 +54,17 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">$</span>
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="salary"
+                                        placeholder="Monthly Salary"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <input
                                     type="number"
                                     class="form-control"
@@ -63,9 +81,9 @@
                             </div>
                         </form>
                         <!--LOADER WILL GO HERE-->
-                        <!-- <div id="loading">
+                        <div id="loading">
                             <img src="img/loading.gif" alt="" />
-                        </div> -->
+                        </div>
 
                         <!--RESULTS-->
                         <div id="results" class="pt-4">
@@ -97,6 +115,7 @@
                                     />
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon"
@@ -106,6 +125,20 @@
                                         type="number"
                                         class="form-control"
                                         id="total-interest"
+                                        disabled
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"
+                                        >Can you afford it?</span
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="afford-loan"
                                         disabled
                                     />
                                 </div>
